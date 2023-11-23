@@ -11,25 +11,63 @@ Table of Contents:
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
-
+:root {
+    --color-peach: #F9C48B;
+    --color-atomic-tangerine: #F69051;
+    --color-burnt-sienna: #F26D40;
+    --color-black-bean: #260803;
+    --color-seashell: #FDEFEC;
+}
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
+    background-color: var(--color-peach);
 }
-
 /*////////////////////////
     2. Typography
 ////////////////////////*/
-
+p {
+    font-size: 12px;
+}
 
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
-
-
+.section{
+    position: relative;
+    margin: 20px 10px 10px 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: var(--color-seashell);
+}
+.section-2 .section-img {
+    width: 100%;
+}
 
 
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+/* Minimaal 768px betekend regels die gelden voor tablets */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: var(--color-atomic-tangerine);
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Minimaal 992px betekend regels die gelden voor kleine computerschermen */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: var(--color-burnt-sienna);
+    }
+    p {
+        font-size: 16px;
+    }
+}
